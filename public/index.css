@@ -1,0 +1,387 @@
+/******************************** Login Page Starts ********************************/
+body {
+  background-color: #f5f5f5;
+}
+
+.emp-login-header {
+  padding-bottom: 8%;
+}
+
+.login-page {
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 8%;
+}
+
+.login-btn {
+  margin-top: 4%;
+}
+/******************************** Login Page Ends ********************************/
+
+/******************************** Navbar Starts ********************************/
+.navbar-div1 {
+  padding-top: 0.6%;
+  padding-bottom: 0.6%;
+  font-size: 1.2rem;
+  box-shadow: 4px 4px 15px gray;
+}
+
+.navbar-div2 {
+  margin: auto;
+  padding-left: 52%;
+}
+
+.nav-link {
+  color: #deebe9e5;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.company-branding {
+  
+  font-weight: bold;
+}
+
+.company-branding:hover {
+  
+  font-weight: bold;
+}
+
+.branch {
+  text-align: center;
+  
+  margin-left: 2%;
+}
+
+.ifsc {
+  text-align: center;
+  
+  margin-left: 13%;
+}
+
+h6 {
+  display: inline;
+}
+
+#txt {
+  margin-left: 60%;
+  
+  /*margin-right: 60%;*/
+  position: absolute;
+}
+/******************************** Navbar Ends ********************************/
+
+/******************************** Card Deck Starts ********************************/
+.features-deck {
+  padding: 5%;
+  text-align: center;
+  margin: 0;
+}
+
+.card-img-top {
+  height: 50%;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.col .card {
+  width: 90%;
+  box-shadow: 5px 7px 20px gray;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.col .card:hover {
+  transform: scale(1.05);
+}
+
+
+
+.row-2 {
+  margin-top: 10%;
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.card-link:hover {
+  color: black;
+}
+
+.emp-management {
+  display: none;
+}
+.transaction {
+  display: none;
+}
+
+/******************************** Card Deck Ends ********************************/
+
+/******************************** Customer Management Starts ********************************/
+.create-heading {
+  text-align: center;
+  margin-top: 1%;
+}
+
+.row {
+  margin: 0;
+  margin-top: 3%;
+}
+
+.sidebar {
+  border-radius: 1rem;
+  background-color: white;
+  padding-left: 0%;
+  padding-right: 0%;
+  text-align: center;
+  position: fixed;
+  border-top-left-radius: unset;
+  border-bottom-left-radius: unset;
+}
+
+.btn {
+  box-shadow: 3px 3px 9px rgb(179, 175, 175);
+}
+
+.nav-pills .nav-link {
+  color: black;
+  border-radius: 1rem;
+  border-top-left-radius: unset;
+  border-bottom-left-radius: unset;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.col-10 {
+  margin-left: auto;
+}
+
+/******************************** Customer Add Starts ********************************/
+.add-custdiv {
+  padding-left: 15%;
+  padding-right: 15%;
+  display: none;
+}
+
+.btn-cust {
+  margin-left: 40%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.view-custdiv {
+  padding-left: 25%;
+  padding-right: 25%;
+  display: none;
+}
+
+.update-custdiv {
+  display: none;
+}
+
+.remove-custdiv {
+  display: none;
+}
+/******************************** Customer Add Ends ********************************/
+/***************************************Customer Update Starts*******************************************/
+.update-custdiv {
+  padding-left: 25%;
+  padding-right: 25%;
+  display: none;
+}
+.update-cust {
+  padding-left: 15%;
+  padding-right: 15%;
+  display: none;
+}
+
+/******************************** Customer Update Ends ********************************/
+
+/**********************************Customer Remove Starts *******************************/
+
+.remove-custdiv {
+  padding-left: 25%;
+  padding-right: 25%;
+  display: none;
+}
+.remove-cust {
+  padding-left: 15%;
+  padding-right: 15%;
+  display: none;
+}
+/******************************** Customer Remove Ends ********************************/
+/******************************** Customer Management Ends ********************************/
+
+/******************************* Emp Profile Starts *************************************/
+.profile-col1 {
+  text-align: center;
+}
+
+.profile-section {
+  border-bottom: rgb(219, 210, 210) 0.5px solid;
+}
+
+.emp_info {
+  width: 80%;
+  margin-top: 3%;
+}
+
+td {
+  padding-top: 4%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+}
+
+.profile-text {
+  font-weight: 400;
+}
+/******************************* Emp Profile Ends *************************************/
+
+/******************************* Account View Starts *************************************/
+.cust_info {
+  width: 80%;
+  table-layout: fixed;
+  margin-left: 3%;
+}
+
+.first_col {
+  padding-right: 2%;
+  border-right: rgb(219, 210, 210) 0.5px solid;
+}
+
+.sec_col {
+  border-right: rgb(219, 210, 210) 0.5px solid;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.acc_info {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.cust_id {
+  padding-top: 3%;
+}
+
+.accinfo_heading {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.balance-box {
+  text-align: center;
+  width: 250px;
+  height: 90px;
+  border: #393e46 1px solid;
+  border-radius: 10px;
+  box-shadow: 2px 4px #838b87;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.bal-text {
+  padding-top: 5%;
+}
+.view-doc-btn {
+  text-align: center;
+  margin: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.acc_trans_table {
+  border-top: rgb(219, 210, 210) 0.5px solid;
+  padding-top: 3%;
+  margin-bottom: 2%;
+}
+.loan_trans_table {
+  border-top: rgb(219, 210, 210) 0.5px solid;
+  padding-top: 3%;
+  margin-bottom: 5%;
+}
+/******************************* Account View Ends *************************************/
+
+/******************************* Transaction Starts *************************************/
+
+.trans_sidebar {
+  font-size: 1.3rem;
+}
+
+.debit_fields {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.debit-btn {
+  margin-left: 45%;
+}
+
+.debit-heading {
+  margin-bottom: 30px;
+}
+
+.view_trans {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.view_all_trans_btn {
+  margin-left: 70%;
+  margin-top: 10%;
+}
+
+.or {
+  margin-top: 5%;
+}
+
+.table_trans {
+  display: none;
+  margin: 7%;
+}
+
+.table-bordered {
+  table-layout: auto;
+}
+/******************************* Transaction Ends *************************************/
+
+/************************Loan Starts*************************/
+.sanction {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+/************************Loan Ends****************************/
+
+/**************************** Validation ****************************/
+.alert-danger {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  box-shadow: 2px 2px 2px rgb(179, 175, 175);
+}
+
+.alert-success {
+  box-shadow: 2px 2px 2px rgb(179, 175, 175);
+}
+
+/***********************INFO***************************************/
+.info{
+  border-left: rgb(219, 210, 210) 0.5px solid;
+  margin-left: 3%;
+  margin-right: 3%;
+
+}
+.emp_details{
+  display: none;
+  margin-right: 9%;
+  margin-left: 9%;
+  margin-top: 5%;
+}

@@ -1,0 +1,52 @@
+<%- include("header") -%>
+
+<div class="row">
+  <div class="col-md-2" style="text-align: center;">
+    <h5>Account</h5>
+    <a class="btn btn-success btn-lg btn-block" href="/info/active_accounts">Active Accounts</a>
+    <a class="btn btn-secondary btn-lg btn-block" href="/info/inactive_accounts">Inactive Accounts</a>
+    <a class="btn btn-danger btn-lg btn-block" href="/info/critical_accounts">Critical Balance Accounts</a>
+    <br>
+    <h5>Loan</h5>
+    <a class="btn btn-success btn-lg btn-block" href="/info/active_loans">Active Loans</a>
+    <a class="btn btn-secondary btn-lg btn-block" href="/info/inactive_loans">Inactive Loans</a>
+    <a class="btn btn-danger btn-lg btn-block" href="/info/overdue_loans">Overdue Loans</a>
+    <br>
+    <h5>Transaction</h5>
+    <a class="btn btn-info btn-lg btn-block" href="/info/all_transactions">Transactions (All Counters)</a>
+    <a class="btn btn-info btn-lg btn-block" href="/info/all_loan_transactions">All Loan Transactions</a>
+  </div>
+  <div class="info">
+
+  </div>
+  <div class="col-md-9">
+    <%if(rows !== undefined){%>
+    <div class="card shadow">
+      <div class="card-body">
+        <table class="table display table-bordered table-striped nowrap">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <%for(var i = 0; i < columns.length; i++){%>
+              <th scope="col"><%=fields[columns[i]].name%></th>
+              <%}%>
+            </tr>
+          </thead>
+          <tbody>
+            <%for(var i = 0; i < rows.length; i++){%>
+            <tr>
+              <th scope="row"><%=i + 1%></th>
+              <%for(var j = 0; j < columns.length; j++){%>
+              <td><%=rows[i][fields[columns[j]].name]%></td>
+              <%}%>
+            </tr>
+            <%}%>
+              </tbody>
+        </table>
+      </div>
+    </div>
+    <%}%>
+  </div>
+</div>
+
+  <%- include("footer") -%>

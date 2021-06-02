@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bank Management System</title>
+
+  <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var ampm = h >= 12 ? ' PM' : ' AM';
+      h = h % 12;
+      h = h ? h : 12;
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      h = checkTime(h);
+      document.getElementById('txt').innerHTML = '<h6 style="font-size: 1.2rem;">Time: ' +
+        h + ":" + m + ":" + s + ampm + '</h6>';
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
+
+  <!-- font-awesome -->
+  <script src="https://kit.fontawesome.com/ee8e198b74.js" crossorigin="anonymous" SameSite="None"></script>
+
+  <!--BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!--CUSTOM CSS-->
+  <link rel="stylesheet" href="/index.css">
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.22/b-1.6.5/b-html5-1.6.5/datatables.min.css" />
+
+</head>
+
+<body onload="startTime()">
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow sticky-top">
+    <a class="navbar-brand company-branding" href="/dashboard">
+      <img src="/images/jstar.png" width="35" height="35" class="d-inline-block align-top" alt="" loading="lazy">
+      JStar Bank
+    </a>
+    <div class="branch">
+      <h6 style="font-size: 1.2rem;">&nbsp &nbsp Branch: <em> <%=br_name%></em></h6>
+    </div>
+    <div class="ifsc">
+      <h6 style="font-size: 1.2rem;">IFSC Code: <em> <%=ifsc_code%></em></h6>
+    </div>
+
+    <div id="txt">
+      <h6 style="font-size: 1.2rem;">Time: 00:00:00 PM</h6>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto navbar-div2">
+        <li class="nav-item">
+          <a class="nav-link" href="/dashboard">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/profile">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Logout</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <!-- Navbar End -->
